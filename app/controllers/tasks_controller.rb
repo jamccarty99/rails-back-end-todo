@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   def new
     @task = Task.new
+    @task_list = Task.all
   end
 
   def index
@@ -13,7 +14,7 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(task_params)
     @task.save
-    render :show
+    redirect_to tasks_path
   end
 
   private
