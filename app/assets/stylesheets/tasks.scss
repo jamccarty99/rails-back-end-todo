@@ -1,0 +1,100 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+   background: #EA1668;
+   font-family: Helvetica Neue,Arial,sans-serif;
+   color: white;
+
+ }
+
+ .flex_column {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .container {
+   align-items: center;
+ }
+
+ .heading {
+   text-align: center;
+   display: block;
+   font-size: 60px;
+   font-weight: normal;
+   font-family: Gotham SSm A,Gotham SSm B,Helvetica Neue,Arial,sans-serif;
+ }
+
+.taskform__container {
+  justify-content: space-around;
+}
+
+ .taskform {
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.taskform__title {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.taskform__input--description{
+   width: 200px;
+   font-size: 15px;
+   color: #EA1668;
+   cursor: text;
+   background: white;
+   padding: 2px;
+   border-width: 1px;
+   border-style: inset;
+   border-color: #292627;
+   border-radius: 4px;
+ }
+
+ .taskform__label--description{
+   margin-bottom: 5px;
+ }
+
+ .taskform__input--title {
+   width: 200px;
+   font-size: 15px;
+   color: #c;
+   background: white;
+   cursor: text;
+   padding: 2px;
+   border-width: 1px;
+   border-style: inset;
+   border-color: #292627;
+   border-radius: 4px;
+   margin-bottom: 15px;
+ }
+
+ .taskform__label--title{
+   margin-bottom: 5px;
+ }
+
+ .taskform__button--create {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 2px;
+  border-width: 1px;
+  border-style: inset;
+  border-radius: 4px;
+  background-color: white;
+  border-color: #292627;
+  color: white;
+  color: #EA1668;
+  letter-spacing: .1em;
+  padding: 12px 24px;
+  padding: .75rem 1.5rem;
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.taskform__button--create:hover {
+  cursor: pointer;
+  background: #BB1352;
+  color: white;
+}

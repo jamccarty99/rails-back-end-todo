@@ -1,0 +1,10 @@
+.container.flex_column
+  h1.heading To Do App
+  .taskform__container
+    h1.taskform__title Create a Task
+    = form_for(:task, url: tasks_path, html: {class: "taskform flex_column"}) do |f|
+      = f.label :title, 'Title', class: 'taskform__label--title'
+      = f.text_field :title, class: 'form-control taskform__input--title', autocomplete: "on", placeholder: "task", required: ""
+      = f.label :description, 'Description', class: 'taskform__label--description'
+      = f.text_field :description, class: 'form-control taskform__input--description', placeholder: "description", required: ""
+      = f.submit "Create", class: "c-button taskform__button--create"
